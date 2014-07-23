@@ -1,0 +1,73 @@
+C:\Users\svvenka>rhc app create elgg php-5.3 mysql-5.1
+DL is deprecated, please use Fiddle
+Application Options
+-------------------
+Domain:     kripvenkatesh
+Cartridges: php-5.3, mysql-5.1
+Gear Size:  default
+Scaling:    no
+
+Creating application 'elgg' ... done
+
+  MySQL 5.1 database added.  Please make note of these credentials:
+
+       Root User: adminR8B6Bk3
+   Root Password: ADbfqzNx9TtP
+   Database Name: elgg
+
+Connection URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
+
+You can manage your new MySQL database by also embedding phpmyadmin.
+The phpmyadmin username and password will be the same as the MySQL credentials a
+bove.
+
+Waiting for your DNS name to be available ... done
+
+Cloning into 'elgg'...
+ssh: connect to host elgg-kripvenkatesh.rhcloud.com port 22: Bad file number
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Unable to clone your repository. Called Git with: git clone
+ssh://53cfb4a04382ec606e000142@elgg-kripvenkatesh.rhcloud.com/~/git/elgg.git/
+"elgg"
+Non-authoritative answer:
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+WARNING:  Your application was created successfully but had problems during
+          configuration. Below is a list of the issues and steps you can
+          take to complete the configuration of your application.
+
+  Application URL: http://elgg-kripvenkatesh.rhcloud.com/
+
+  Issues:
+    1. We were unable to clone your application's git repo - Unable to clone
+your repository. Called Git with: git clone
+ssh://53cfb4a04382ec606e000142@elgg-kripvenkatesh.rhcloud.com/~/git/elgg.git/
+"elgg"
+
+  Steps to complete your configuration:
+    1. Clone your git repo
+      $ rhc git-clone elgg
+
+  If you continue to experience problems after completing these steps,
+  you can try destroying and recreating the application:
+
+    $ rhc app delete elgg --confirm
+
+  Please contact us if you are unable to successfully create your
+  application:
+
+    Support - https://www.openshift.com/support
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Your application 'elgg' is now available.
+
+  URL:        http://elgg-kripvenkatesh.rhcloud.com/
+  SSH to:     53cfb4a04382ec606e000142@elgg-kripvenkatesh.rhcloud.com
+  Git remote: ssh://53cfb4a04382ec606e000142@elgg-kripvenkatesh.rhcloud.com/~/gi
+t/elgg.git/
+
+Run 'rhc show-app elgg' for more details about your app.
